@@ -1,0 +1,35 @@
+p{
+    text-align: center;
+    color: red;
+}
+#para1{
+    text-align: right;
+    color:green;
+}
+.para2{
+    text-align: left;
+    color: blue;
+}
+
+h1, h2, h3 {
+    text-align: right;
+    color: blue;
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: yellow;
+}
+
+a:hover{
+    color:red;
+    text-decoration: none;
+}
+
+a:active{
+    color: green;
+}
