@@ -1,0 +1,67 @@
+p {
+    text-align: center;
+    color: red;
+}
+#para1{
+    text-align: right;
+    color: green;
+}
+
+/* Selector untuk tautan yang belum diklik */
+a {
+    color: yellow;
+    text-decoration: none;
+}
+/* Selector untuk tautan yang sudah diklik */
+a:visited {
+    color: blue;
+}
+/* Selector untuk tautan saat dihover (ketika kursor berada di atasnya) */
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+/* Selector untuk tautan yang sedang diaktif (saat diklik) */
+a:active {
+    color: green;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #31013f;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #be6bda;
+    color: #F0E3E4;
+    text-align: center;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    color: blue;
+}
+footer {
+    padding: 10px;
+    background-color: #31013f;
+    color: white;
+    text-align: center;
+}
