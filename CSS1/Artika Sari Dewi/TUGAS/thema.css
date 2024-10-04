@@ -1,0 +1,62 @@
+a:visited {
+    color: rgb(21, 18, 209);
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+
+header {
+    background-color: #f0ecec;
+    color: #ffffff;
+    text-align: center;
+}
+
+aside {
+    background-color: rgb(106, 135, 197);
+    width: 100px; /* Lebar aside */
+    height: 600px; /* Ini mungkin perlu disesuaikan */
+    text-align: center;
+    margin: auto;
+    padding: 20px; /* Tambahkan padding agar teks tidak terlalu rapat */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:10px;
+}
+nav li {
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin: 0;
+    padding: 10px;
+}
+
+section {
+    flex-grow: 1; 
+    padding: 20px; 
+    background-color: #f0f0f0;
+}
+footer {
+    background-color: #f8f8fc;
+    color: #130f10;
+    text-align: right;
+    padding: 10px;  
+}
+
+img {
+    width: 700px; /* Ukuran gambar */
+    height: 300px; 
+    display: block; /* Pastikan gambar ditampilkan sebagai blok */
+    margin: auto; /* Pusatkan gambar */
+}
+.container {
+    display: flex;
+}
+
+
+
