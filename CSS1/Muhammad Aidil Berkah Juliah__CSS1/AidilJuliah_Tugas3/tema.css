@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 20%;
+}
+
+section {
+  text-align: justify;
+  padding: 10px;
+  flex: 1;
+}
+
+/*Selector untuk tautan yang belum diklik*/
+a {
+  color: blue; /*Mengubah warna teks menjadi biru*/
+  text-decoration: none; /*Menghapus garis bawah pada teks*/
+}
+
+/*Selector untuk tautan yang sudah diklik*/
+a:visited {
+  color: saddlebrown; /*Mengubah warna tautan yang sudah diklik*/
+}
+
+/*Selector untuk tautan saat dihhover (ketika kursor berada di atasnya)*/
+a:hover {
+  color: red; /*Mengubah warna tautan saat dihover menjadi merah*/
+  text-decoration: none; /*Menghapus garis bawah saat dihover*/
+}
+
+/*Selector untuk tautan yang sedang diaktifkan (saat diklik)*/
+a:active {
+  color: wheat; /*Mengubah warna tautan saat diaktif menjadi hijau*/
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gaya tambahan untuk membuat tampilan lebih menarik */
+nav ul {
+  list-style: none;
+  padding: 1;
+}
+
+nav li {
+  margin-bottom: 60px;
+}
