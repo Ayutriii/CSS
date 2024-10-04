@@ -3,9 +3,9 @@ h1, h2, h3 {
     color: #8f0130;
 }
 header {
-    background-image: url('fotoTugas.png'); /* Mengatur gambar sebagai background */
-    background-size: cover;                 /* Mengatur gambar agar menutupi seluruh area */
-    background-position: center;            /* Memastikan gambar berada di tengah */
+    background-image: url('fotoTugas.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;   
     height: 100px;  
     text-align: center;   
