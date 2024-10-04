@@ -1,0 +1,41 @@
+h1, h2, h3 {
+    text-align: center;
+    color: #a5ca1f;
+}
+
+header {
+    background-color: #336acf;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+aside{
+    background-color: #f10cf1f9;
+    width: 200px;
+    height: 600px;
+    float: left;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: #111010;
+}
+
+a:visited {
+    color: #cdcf2e;
+}
+
+a:hover {
+    color: #2f55cf;
+    text-decoration: none;
+}
