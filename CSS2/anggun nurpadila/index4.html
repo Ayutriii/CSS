@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="row bg-primary">
+      <div class="col-12 p-3">
+        <img id="header-img" src="icon.png" class="img-circle mx-auto d-block p-3" width="236" height="236" alt="Header Image">
+        <input type="file" id="upload" accept="image/*" onchange="loadFile(event)" class="form-control">
+      </div>
+      <h1 class="text-center text-light">Belajar Bootstrap</h1>
+    </div>
+
+    <div class="row">
+      <!-- Sidebar Menu -->
+      <div class="col-3 p-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buku Tamu</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Konten -->
+      <div class="col-9 p-3 text-primary">
+        Education is the main key to opening various opportunities in life. The joy of education lies in the learning process 
+        which takes us to a new world, full of knowledge and insights that we may have never imagined before. Every lesson, 
+        whether in the classroom or in everyday life, enriches the way we think, understand and act. Education also provides 
+        freedom to think critically, solve problems and be creative, so that we are able to adapt in an ever-changing world. 
+        In addition, interactions with fellow students and teachers create an inspiring and supportive environment, making 
+        the learning journey more meaningful and enjoyable.
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="col-12 bg-primary text-center p-1">by@belajar.yuk!</div>
+    </div>
+  </div>
+
+  <script>
+    var loadFile = function(event) {
+      var output = document.getElementById('header-img');
+      output.src = URL.createObjectURL(event.target.files[0]);
+      output.onload = function() {
+        URL.revokeObjectURL(output.src) // free memory
+      }
+    };
+  </script>
+
+</body>
+</html>
