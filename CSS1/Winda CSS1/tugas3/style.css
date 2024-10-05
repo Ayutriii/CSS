@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(238, 199, 205);
+    text-align:center;
+}
+h1{
+    text-align: center;
+}
+aside{
+    height: 800px;
+    width: 20%;
+    background-color:rgb(238, 199, 205);
+    float: left;
+}
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+}
+li{
+    margin: 10px;
+}
+section{
+    padding: 10px;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    padding: 5px;
+    background-color: rgb(233, 170, 170);
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+/* Selector untuk tautan yang belum diklik */
+a{
+    color: rgb(255, 254, 254); /* Mengubah warna teks menjadi biru */ 
+    text-decoration: none; /* menghapus garis bawah pada teks */
+} 
+/* Selector untuk tautan yang sudah diklik */
+a:visited {
+    color: rgb(245, 244, 244); /* Mengubah warna tautan yang sudah diklik */
+}
+/* Selector untuk tautan saat dihover (ketika kursor berada di atasnya) */ 
+a:hover {
+    color:rgb(22, 21, 22); /* Mengubah warna tautan saat dihover menjadi merah */ 
+    text-decoration: none; /* Menghapus garis bawah saat dihover */
+} 
+/* Selector untuk tautan yang sedang diaktif (saat diklik) */ 
+a:active {
+    color:pink; /* Mengubah warna tautan saat diaktif menjadi hijau */
+}
