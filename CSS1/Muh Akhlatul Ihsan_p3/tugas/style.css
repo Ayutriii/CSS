@@ -1,20 +1,25 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
+header, footer {
+    width: 100%;
+    background-color: chocolate;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
 header img {
@@ -22,45 +27,24 @@ header img {
     height: auto;
 }
 
-.content {
-    display: flex;
-    flex: 1;
-}
-
 aside {
-    position: fixed;
-    width: 200px;
-    background-color: #e0e0e0;
+    width: 25%;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    flex: 1;
+section {
+    width: 75%;
     padding: 20px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 footer {
-    position: fixed;
-    background-color: #333;
-    color: white;
-    text-align: center;
     padding: 10px;
 }
 
 footer a {
     color: white;
+    text-decoration: none;
 }
