@@ -1,0 +1,36 @@
+/* style.css */
+body {
+    display: grid;
+    grid-template-columns: 20% 1fr; /* Kolom aside 20%, kolom konten 80% */
+    grid-template-rows: auto 1fr auto; /* Header dan footer auto height, konten mengisi sisa ruang */
+    grid-template-areas: 
+        "header header"
+        "aside  main"
+        "footer footer";
+    text-align: justify; /* Rata kanan-kiri teks */
+    font-family: sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+section {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
