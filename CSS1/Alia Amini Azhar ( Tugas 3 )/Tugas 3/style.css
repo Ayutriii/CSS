@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e2e2e; /* abu sangat gelap */
+    text-align: center;
+    padding: 10px;
+}
+header img {
+    max-width: 100%; 
+    height: auto;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    background-color: #000000; /* hitam */
+    color: #c0c0c0; /* putih silver */
+    height: 176.5vh;
+    padding: 20px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #c0c0c0; /* putih silver */
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e2e2e; /* abu sangat gelap */
+    color: #c0c0c0; /* putih silver */
+}
+
+footer {
+    background-color: #000000; /* hitam */
+    color: #c0c0c0; /* putih silver */
+    text-align: center;
+    padding: 10px;
+    width: 80%; 
+    float: right; 
+    font-size: 10px;
+}
