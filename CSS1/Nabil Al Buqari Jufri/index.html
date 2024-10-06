@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS CSS-1</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <img src="Foto.1.jpg" alt="Header Image" width="700">
+        <p>
+            <small>Image Credit: <a href="https://binaqurani.sch.id/wp-content/uploads/2021/11/Bina-Qurani-Belajar-Jaringan-Komputer-Topologi-Photo-created-by-macrovector-freepik-com-1024x576.jpg ">Sumber</a></small>
+        </p>
+    </header>
+
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="#">BERANDA</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <header>
+                <h1>COMPUTER NETWORK PROTOCOLS: 
+                    DEFINISI, PERAN, DAN RAGAM 
+                    PROTOKOL
+                    </h1>
+            </header>
+        
+            <section>
+                <h2>Pengertian</h2>
+                <p>
+                        Protokol jaringan komputer adalah aturan yang diberlakukan dalam jaringan komputer yang harus diikuti oleh pengirim dan penerima untuk berkomunikasi dan bertukar informasi satu sama lain, meskipun berbeda. 
+                    Ketika pertama kali muncul pada awal tahun 1970-an, protokol ini hanya digunakan untuk menghubungkan sejumlah kecil node. Berbagai jenis protokol baru muncul pada awal tahun 1990-an, ketika Internet berkembang pesat di seluruh dunia. Namun, banyaknya jenis protokol menimbulkan masalah praktis. 
+                    Artinya, jenis protokol tertentu yang dibuat di pabrik dan jenis protokol lainnya tidak kompatibel dan tidak dapat berkomunikasi satu sama lain.
+                </p>
+                <p>
+                    Kemudian, International Standard Organisation (ISO) menstandarkan protokol yang sekarang dikenal sebagai Open Systems Interconnection (OSI). 
+                    Namun, karena model OSI adalah konsep dasar dan preferensi teoretis mengenai cara kerja protokol, TCP/IP akhirnya menjadi standar yang diterima secara luas karena meningkatnya adopsi.
+                </p>
+        
+                <h2>Peran Protokol</h2>
+                <p>
+                    Protokol memiliki banyak fungsi dalam jaringan komputer. Tidak semua protokol memiliki fungsi yang sama, tetapi ada protokol yang bekerja dengan cara yang mirip meskipun pada level yang berbeda. 
+                    Untuk membangun sistem komunikasi yang lengkap, beberapa protokol harus digabungkan dengan protokol lain.
+                </p>
+                <p>
+                    Secara umum, fungsi protokol jaringan komputer adalah menghubungkan pengirim dan penerima dalam komunikasi serta memastikan pertukaran informasi terjadi secara akurat dan lancar.
+                </p>
+                <p>Fitur lain dari protokol ini meliputi:</p>
+                <ul>
+                    <li><strong>Enkapsulasi:</strong> Selain informasi yang dikirim dengan alamat, kode koreksi, dll. Paket data ini disebut frame. Contoh protokol dengan kemampuan enkapsulasi antara lain HDLC, ATM, LLC, IEEE 802.11, IEEE 802.3, Frame Relay, TFTP, dan AAL5.</li>
+                    <li><strong>Connection control:</strong> Membuat koneksi komunikasi dari pemancar ke penerima, mengirim data, dan mengakhiri koneksi.</li>
+                    <li><strong>Flow control:</strong> Mengatur pergerakan data dari pengirim ke penerima, membatasi jumlah data yang dikirim. Fungsi ini memerlukan stop-and-wait, di mana setiap PDU diverifikasi sebelum proses pengiriman selanjutnya.</li>
+                    <li><strong>Error control:</strong> Memantau proses transmisi data untuk mendeteksi kesalahan. Jika terjadi kesalahan, paket akan segera di-drop.</li>
+                    <li><strong>Fragmentasi:</strong> Proses di mana pengirim membagi informasi yang dikirimkan ke dalam beberapa paket data.</li>
+                    <li><strong>Reassembly:</strong> Proses di mana penerima merakit paket data menjadi paket lengkap.</li>
+                    <li><strong>Transmission service:</strong> Menyediakan layanan komunikasi data dalam hal prioritas dan keamanan, misalnya pengaturan batas koneksi dan kualitas jaringan.</li>
+                </ul>
+        
+                <h2>Ragam Protokol</h2>
+                <p>
+                    Ada beberapa jenis protokol jaringan komputer yang dapat diterapkan pada perangkat keras, perangkat lunak, atau kombinasi keduanya:
+                </p>
+                <ul>
+                    <li><strong>TCP/IP (Transmission Control Protocol/Internet Protocol):</strong> Standar komunikasi data yang terdiri dari sekumpulan protokol yang digunakan oleh komunitas Internet di seluruh dunia. TCP menyediakan koneksi berorientasi stream, sementara IP mengelola pengiriman paket data antar perangkat.</li>
+                    <li><strong>UDP (User Datagram Protocol):</strong> Protokol lapisan transport TCP/IP yang mendukung komunikasi tanpa koneksi, cocok untuk aplikasi yang membutuhkan pengiriman cepat seperti video dan game.</li>
+                    <li><strong>ICMP (Internet Control Message Protocol):</strong> Protokol yang digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan ke jaringan. Misalnya, pesan echo yang digunakan oleh perintah ping.</li>
+                    <li><strong>FTP (File Transfer Protocol):</strong> Protokol untuk mentransfer file antar komputer dalam jaringan, menggunakan metode koneksi kontrol dan data terpisah.</li>
+                    <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Protokol jaringan yang memungkinkan server memberikan alamat IP dan konfigurasi lain secara otomatis kepada perangkat dalam jaringan.</li>
+                </ul>
+        
+                <p>
+                    Jadi, apakah Anda sudah memahami protokol jaringan komputer? Semoga artikel ini bermanfaat dan menambah wawasan Anda tentang dunia jaringan komputer.
+                </p>
+        
+                <p>
+                    <small>Credit inspired by: <a href="https://www.baktikominfo.id/id/informasi/pengetahuan/protokol_jaringan_komputer_pengertian_fungsi_dan_jenisnya-710">Sumber</a></small>
+                </p>
+
+        <footer>
+            <small>&copy; Nabil Al Buqari Jufri 2024.All rights reserved. | <a href="#top">Back to top</a></small>
+        </footer>
+    </div>
+
+</body>
+</html>
