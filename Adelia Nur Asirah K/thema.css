@@ -1,0 +1,182 @@
+p {
+  text-align: center;
+  color: red;
+}
+
+#para1 {
+  text-align: right;
+  color: green;
+}
+
+.para2 {
+  text-align: left;
+  color: blue;
+}
+
+h1, h2, h3 {
+  text-align: right;
+  color: rgb(161, 4, 246);
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+}
+a:hover {
+    color: rgb(0, 255, 26);
+    text-decoration: none;
+}
+
+a:active {
+    color: green;
+}
+
+header {
+    background: #3f1d57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #982a91;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li a {
+    color: rgb(231, 236, 179);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: #381a44;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+
+/* Style Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fb;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1f3c88, #0f1c2e);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Aside Menu */
+aside {
+    width: 22%;
+    float: left;
+    background: #eaf0f6;
+    padding: 20px;
+    min-height: 500px;
+    box-sizing: border-box;
+    border-right: 2px solid #cbd5e0;
+}
+
+aside h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #1f3c88;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 12px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #1f3c88;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+aside ul li a:hover {
+    background: #1f3c88;
+    color: white;
+}
+
+/* Section Konten */
+section {
+    width: 75%;
+    float: right;
+    padding: 25px;
+    background: white;
+    box-sizing: border-box;
+    min-height: 500px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+section h2, section h3 {
+    color: #1f3c88;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background: #0f1c2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fcbf49;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
