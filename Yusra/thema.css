@@ -1,0 +1,80 @@
+p{
+    text-align: center;
+    color: red;
+}    
+#para1 {
+    text-align: justify;
+    color: green;
+}
+.para2 {
+    text-align: left;
+    color: blue;
+}
+h1, h2, h3 {
+    text-align: right;
+    color: blue;
+}
+
+/* Selector untuk tautan yang belum diklik */
+a {
+    color: blue; /* mengubah warna teks menjadi biru */
+    text-decoration: none; /* menghapus garis bawah menjadi teks */
+}
+
+/* Selector untuk tautan yang sudah diklik */
+a:visited {
+    color: yellow; /* mengubah warna tautan yang sudah diklik */
+}
+
+/* Selector untuk tautan yang sudah dihover (ketika kursor berada diatasnya) */
+a:hover {
+    color: red; /* mengubah warna tautan saat dihover menjadi merah */
+    text-decoration: underline; /* menghapus garis bawah saat dihover */
+}
+
+/* Selector untuk tautan yang sedang diaktif (saat diklik) */
+a:active {
+    color: green; /* Mengubah warna tautan saat diaktif menjadi hijau */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #31013f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #be6bda;
+    color: #F0E3E4;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(97, 4, 35);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
