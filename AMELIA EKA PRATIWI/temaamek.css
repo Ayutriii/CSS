@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh; /* Agar body mengambil seluruh tinggi viewport */
+}
+
+/* Mengatur tata letak di dalam <main> */
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Kolom untuk aside dan section */
+    grid-template-areas: "aside section";
+}
+
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center; /* Memusatkan gambar di dalam header */
+}
+
+header img {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar header */
+    height: auto;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside a {
+    display: block;
+    padding: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    grid-area: section;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: 10;
+    display: block;
+}
+footer a {
+  color: white; /* Mengubah warna teks menjadi putih */
+}
