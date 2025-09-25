@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tugas Layout - Praktikum 3</title>
+  <link href="thema.css" rel="stylesheet" type="text/css">
+  <style>
+    #content-section { max-height: 600px; overflow-y: auto; padding-right: 8px; }
+    .copyright {
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="top">
+    <header class="site-header" style="background-image: url('images/header.jpg');">
+      <div class="overlay"></div>
+      <h1>Judul Website (Header)</h1>
+    </header>
+
+    <div class="main">
+      <aside>
+        <h3>Menu</h3>
+        <ul class="menu-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </aside>
+
+      <article>
+        <section id="beranda">
+          <h2>Beranda</h2>
+          <div id="content-section">
+            <div id="dummy-text"></div>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      <div class="copyright">
+        <div>&copy; <span id="copyright-year"></span> Nama Anda</div>
+        <div><a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Kembali ke Atas ↑</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Generate dummy text ±800 kata
+    (function generateDummy(wordsTarget){
+      const lorem = ["Lorem","ipsum","dolor","sit","amet","consectetur","adipiscing","elit"];
+      let out = [];
+      for (let i=0;i<wordsTarget;i++){
+        let w = lorem[i % lorem.length];
+        if(i % 20 === 0 && i !== 0){ w = w.charAt(0).toUpperCase() + w.slice(1); }
+        out.push(w);
+        if(i % 25 === 0 && i !== 0){ out[out.length-1] += "."; }
+      }
+      const paragraphs = [];
+      const size = 100;
+      for(let p=0;p<Math.ceil(wordsTarget/size);p++){
+        let para = out.slice(p*size,(p+1)*size).join(" ");
+        if(!/[.!?]$/.test(para)) para+=".";
+        paragraphs.push("<p>"+para+"</p>");
+      }
+      document.getElementById('dummy-text').innerHTML = paragraphs.join("\n");
+    })(800);
+
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
