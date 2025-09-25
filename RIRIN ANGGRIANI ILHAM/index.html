@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website Contoh - Layout Top Index</title>
+  <link href="thema.css" rel="stylesheet" type="text/css">
+  <!-- Tambah font dari Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Tambahan styling untuk header */
+    .site-header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700; 
+      animation: fadeInDown 2s ease;
+    }
+    .tagline {
+      position: relative;
+      color: #fff;
+      font-size: 1rem;
+      margin-top: 10px;
+      z-index: 2;
+      background: rgba(0,0,0,0.4);
+      padding: 6px 14px;
+      border-radius: 6px;
+      animation: fadeInUp 2s ease;
+    }
+    .site-header .overlay {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="top">
+    <!-- Header -->
+    <header class="site-header" style="background-image: url('images/header.jpg');">
+      <div class="overlay"></div>
+      <div style="text-align:center; position:relative; z-index:2;">
+        <h1>ririn anggriani ilham</h1>
+        <p class="tagline">Mahasiswa • Belajar Web • Berkarya</p>
+      </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="site-nav">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Main -->
+    <div class="main">
+      <aside>
+        <h3>Menu</h3>
+        <ul class="menu-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </aside>
+
+      <article>
+        <!-- Beranda -->
+        <section id="beranda">
+          <h2>Beranda</h2>
+          <p>Halo, selamat datang di halaman latihan saya. Website ini dibuat sebagai media pembelajaran untuk mengenal dasar-dasar HTML, CSS, 
+            dan cara menyusun tampilan web sederhana dengan struktur yang rapi.</p>
+        </section>
+
+        <!-- Tentang Kami -->
+        <section id="tentang" style="margin-top:16px;">
+          <h2>Tentang Kami</h2>
+          <p>Saya adalah mahasiswa yang tertarik mendalami dunia teknologi, terutama di bidang pembuatan website. 
+            Situs ini saya gunakan sebagai tempat praktik sekaligus portofolio sederhana untuk melatih kemampuan dalam menulis kode HTML, 
+            mengatur desain dengan CSS, serta memahami konsep tata letak halaman web.</p>
+
+          <p>Dengan tekad belajar yang konsisten dan semangat untuk berkreasi, saya berharap dapat terus berkembang 
+            serta memberikan kontribusi positif di era digital.</p>
+        </section>
+
+        <!-- Layanan -->
+        <section id="layanan" style="margin-top:16px;">
+          <h2>Layanan</h2>
+          <p>Berikut beberapa hal yang saya latih dan kembangkan melalui pembuatan website ini:</p>
+          <ul>
+            <li>Membuat rancangan website sederhana</li>
+            <li>Mengatur tampilan dengan CSS agar lebih menarik</li>
+            <li>Menerapkan layout responsif yang menyesuaikan ukuran layar</li>
+            <li>Mengenal prinsip dasar keamanan dalam pembuatan web</li>
+          </ul>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" style="margin-top:16px;">
+          <h2>Kontak</h2>
+          <p>Jika anda ingin menghubungi saya, silakan melalui:</p>
+          <ul>
+            <li><strong>Telepon/WA:</strong> 0853-7380-4196</li>
+            <li><strong>Email:</strong> webmahasiswa@example.com</li>
+            <li><strong>Alamat:</strong> Makassar, Sulawesi Selatan</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Website Mahasiswa. Semua hak cipta dilindungi. 
+      <a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); ret
