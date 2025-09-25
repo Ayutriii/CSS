@@ -1,0 +1,74 @@
+p {
+    text-align: center;
+    color: red;
+}
+
+#para1 {
+    text-align: right;
+    color: green;
+}
+
+.para2 {
+    text-align: left;
+    color: blue;
+}
+
+h1, h2, h3 {
+    text-align: right;
+    color: blue;
+}
+
+a {
+    color: blue;             
+    text-decoration: none;    
+}
+
+a:visited {
+    color: yellow;           
+}
+
+a:hover {
+    color: red;               
+    text-decoration: none;    
+}
+
+a:active {
+    color: green;             
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #050215;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #6b0dba;
+    color: #e3e4e4;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+
