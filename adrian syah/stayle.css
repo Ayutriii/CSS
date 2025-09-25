@@ -1,0 +1,108 @@
+/* Aturan dasar dan reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Warna latar belakang abu-abu muda yang lembut */
+    color: #333; /* Warna teks yang mudah dibaca */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Kontainer utama untuk aside dan main */
+.main-wrapper {
+    display: flex;
+    flex: 1; /* Memastikan kontainer ini mengisi ruang yang tersisa */
+    max-width: 1500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Penting untuk menjaga sudut membulat */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian Menu (Aside) */
+.sidebar-menu {
+    flex: 1;
+    background-color: #eef1f5; /* Warna latar yang sedikit berbeda untuk membedakan */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-menu h2 {
+    color: #4a69bd;
+    border-bottom: 2px solid #4a69bd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    color: #4a69bd;
+}
+
+/* Konten Utama (Main) */
+.main-content {
+    flex: 3;
+    padding: 30px;
+}
+
+.main-content h2 {
+    color: #2c3e50;
+}
+
+.main-content h3 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    margin-top: auto; /* Mendorong footer ke bawah */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
