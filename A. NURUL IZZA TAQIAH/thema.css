@@ -1,0 +1,191 @@
+p {
+    text-align: center;
+    color: red;
+}
+#para1{
+    text-align: right;
+    color: green;
+}
+.para2{
+    text-align: left;
+    color: blue;
+}
+h1, h2, h3 {
+    text-align: right;
+    color: blue;
+}
+
+/*Selector untuk tautan yang belum diklik*/
+a{
+    color: blue; /*mengubah warna teks menjadi biru*/
+    text-decoration: none; /* menghapus garis bawah pada teks */
+}
+
+/* Selector untuk tautan yang sudah diklik*/
+a:visited {
+    color: yellow; /* Mengubah warna tautan yang sudah diklik*/
+}
+
+/* Selector untuk tautan saat dihover (ketika kusor berada di atasnya) */
+a:hover {
+    color: red; /* Mengubah warna tautan saat di hover menjadi merah */
+    text-decoration: none; /* Menghapus garis bawah saat dihover */
+}
+
+/* Selector untuk tautan yang sedang diaktif (saat diklik) */
+a:active {
+    color: green; /* Mengubah warna tautan saat diaktif menjadi hijau */
+}
+
+/* Selector untuk tautan yang belum diklik */
+a {
+    color: blue; /* Mengubah warna teks menjadi biru */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+}
+
+/* Selector untuk tautan yang sudah diklik */
+a:visited {
+    color: yellow; /* Mengubah warna tautan yang sudah diklik */
+}
+
+/* Selector untuk tautan saat dihover (ketika kursor berada di atasnya) */
+a:hover {
+    color: red; /* Mengubah warna tautan saat dihover menjadi merah */
+    text-decoration: none; /* Menghapus garis bawah saat dihover */
+}
+
+/* Selector untuk tautan yang sedang diaktif (saat diklik) */
+a:active {
+    color: green; /* Mengubah warna tautan saat diaktif menjadi hijau */
+}
+
+h1, h2{
+  text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #31013f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #be6bda;
+    color: #f0e3e4;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.content-area {
+  display: flex;
+  min-height: 500px;
+}
+
+aside {
+  width: 200px;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+aside h3 {
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  margin: 12px 0;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+aside ul li a:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+section {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+section p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
