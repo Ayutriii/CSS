@@ -1,0 +1,34 @@
+
+p {
+  text-align: center;
+  color: #ff0000;
+  line-height: 1.5;
+}
+
+
+#para1 {
+  text-align: right;
+  color: green;
+}
+
+
+.para2 {
+  text-align: left;
+  color: blue;
+}
+
+
+h1, h2, h3 {
+  text-align: right;
+  color: blue;
+}
+
+
+a, a:link, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
